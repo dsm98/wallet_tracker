@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:wallettracker/Auth/passwordReset.dart';
 import 'package:wallettracker/Auth/registerPage.dart';
+import 'package:wallettracker/homePage.dart';
 
 
 
@@ -48,6 +49,10 @@ class LoginPage extends StatelessWidget {
                 ElevatedButton(
                   onPressed: () {
                     // Handle login logic here
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => HomePage()),
+                    );
                   },
                   child: Text('Login',style: TextStyle(color: Colors.white),),
                   style: ElevatedButton.styleFrom(
