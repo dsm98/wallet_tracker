@@ -27,10 +27,10 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         backgroundColor: Colors.blueAccent,
-        title: Text('Wallet Tracker'),
+        title: Text('Wallet Tracker',style: TextStyle(color: Colors.white),),
         actions: [
           IconButton(
-            icon: Icon(Icons.notifications),
+            icon: Icon(Icons.notifications),color: Colors.white,
             onPressed: () {
               // Handle notification icon press
             },
