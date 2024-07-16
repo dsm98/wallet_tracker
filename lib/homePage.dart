@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'screens/analyse_screen.dart';
 import 'screens/wallet_screen.dart';
 
 class HomePage extends StatefulWidget {
@@ -11,7 +11,7 @@ class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
   static const List<Widget> _widgetOptions = <Widget>[
     WalletScreen(),
-    Text('Report', style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold)),
+    AnalyseScreen(),
     Text('Profile Page', style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold)),
   ];
 
@@ -64,7 +64,7 @@ class _HomePageState extends State<HomePage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.dashboard),
-            label: 'Report',
+            label: 'Analytics',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
